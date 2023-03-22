@@ -1,5 +1,6 @@
 package service;
 
+import config.Config;
 import model.Product;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class ProductServiceIMPL implements IProductService{
     public void save(Product product) {
         productList.add(product);
     }
+
 
     @Override
     public Product findById(int id) {

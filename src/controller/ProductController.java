@@ -11,7 +11,10 @@ public class ProductController {
     public List<Product> showListProduct(){
         return productService.findAll();
     }
-    public void createStudent(Product product){
+    public void createProduct(Product product){
         productService.save(product);
+    }
+    public void deleteProduct(int id){
+        productService.deleteById(id);
     }
 }
